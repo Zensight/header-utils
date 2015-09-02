@@ -54,7 +54,7 @@ Distributed under the MIT License. See [LICENSE][] for more info.
 [clojars-url]: https://clojars.org/co.zensight/header-utils
 [clojars-img]: https://img.shields.io/clojars/v/co.zensight/header-utils.svg?style=flat-square
 
-[travis-url]: http://travis-ci.org/zensight/header-utils
-[travis-image]: http://img.shields.io/travis/zensight/header-utils/develop.svg?style=flat-square
+[travis-url]: http://travis-ci.org/Zensight/header-utils
+[travis-image]: http://img.shields.io/travis/Zensight/header-utils.svg?style=flat-square
 
-[phasers-image]: https://img.shields.io/badge/phasers-stun-green.svg?style=flat-square
+[phasers-image]: https://img.shields.io/badge/phasers-stun-brightgreen.svg?style=flat-square
