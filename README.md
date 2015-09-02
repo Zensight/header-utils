@@ -7,8 +7,6 @@
 
 A Clojure library for handling gross things in HTTP headers. Specifically, it can encode and parse Content-Disposition headers with special characters, and exposes clean APIs for working RFC-5987.
 
-[![Clojars Project](http://clojars.org/co.zensight/header-utils/latest-version.svg)](http://clojars.org/co.zensight/header-utils)
-
 ## Usage
 
 ### Content-Disposition
