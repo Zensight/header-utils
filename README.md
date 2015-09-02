@@ -13,13 +13,15 @@ A Clojure library for handling gross things in HTTP headers. Specifically, it ca
 
 ```clj
 user=> (use 'header-utils.content-disposition)
-nil
+
 user=> (def s (encode "attachment" "Y͢o҉u f̴ee̡l̡ ̶fée͝bl̢e.͡.pdf"))
-#'user/s
+
 user=> s
 "attachment;filename*=UTF-8''Y%CD%A2o%D2%89u%20f%CC%B4ee%CC%A1l%CC%A1%20%CC%B6f%C3%A9e%CD%9Dbl%CC%A2e.%CD%A1.pdf"
+
 user=> (parse-type s)
 "attachment"
+
 user=> (parse-filename s)
 "Y͢o҉u f̴ee̡l̡ ̶fée͝bl̢e.͡.pdf"
 ```
