@@ -49,7 +49,7 @@ Distributed under the MIT License. See [LICENSE][] for more info.
 [documentation-url]: http://icambron.github.io/twix.js/docs.html
 
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
-[license]: LICENSE.md
+[license]: LICENSE
 
 [clojars-url]: https://clojars.org/co.zensight/header-utils
 [clojars-img]: https://img.shields.io/clojars/v/co.zensight/header-utils.svg?style=flat-square
