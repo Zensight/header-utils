@@ -34,8 +34,10 @@
     ["inline" "foo.txt"]                            "inline;filename=foo.txt"
     ["inline" "foo bar.txt"]                        "inline;filename=\"foo bar.txt\""
     ["inline" "foo \" bar.txt"]                     "inline;filename=\"foo \\\" bar.txt\""
-    ["inline" "special҉"]                          "inline;filename*=UTF-8''special%D2%89"
+    ["inline" "comma,having.txt"]                   "inline;filename=\"comma,having.txt\""
+    ["inline" "special҉"]                            "inline;filename*=UTF-8''special%D2%89"
+    ["inline" "special҉,comma"]                      "inline;filename*=UTF-8''special%D2%89%2Ccomma"
     ["inline" "need-language" "en" {}]              "inline;filename*=UTF-8'en'need-language"
     ["inline" "more-params" nil {:foo "bar"}]       "inline;filename=more-params;foo=bar"
-    ["inline" "more-params" nil {:foo "special҉"}] "inline;filename=more-params;foo*=UTF-8''special%D2%89"))
+    ["inline" "more-params" nil {:foo "special҉"}]   "inline;filename=more-params;foo*=UTF-8''special%D2%89"))
 
