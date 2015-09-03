@@ -5,7 +5,7 @@
 [![MIT License][license-image]][license]
 ![Phasers to stun][phasers-image]
 
-A Clojure library for handling gross things in HTTP headers. Specifically, it can encode and parse Content-Disposition headers with special characters, and exposes clean APIs for working RFC-5987.
+A Clojure library for handling gross things in HTTP headers. Specifically, it can encode and parse Content-Disposition headers UTF-8 characters (RFC 6266), and exposes clean APIs for working with RFC 5987 encodings generally.
 
 ## Usage
 
