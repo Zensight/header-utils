@@ -5,6 +5,7 @@
 (deftest test-quote
   (is (= (e/quote-str "fine") "fine"))
   (is (= (e/quote-str "stuff < things") "\"stuff < things\""))
+  (is (= (e/quote-str "stuff,things") "\"stuff,things\""))
   (is (= (e/quote-str "\"") "\"\\\"\""))
   (is (= (e/quote-str "\\hello") "\"\\\\hello\""))
   (is (= (e/quote-str "this is \\a\\ crappy [\"string\"]") "\"this is \\\\a\\\\ crappy [\\\"string\\\"]\"")))
