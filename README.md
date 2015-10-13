@@ -32,7 +32,7 @@ You can also specify language and additional parameters.
 
 My goal in writing this library was the handle Content-Disposition, but I took some pains to make the proximate tools as useful as possible. Specifically:
 
- * `header-utils.parameters` - encode and parse RFC-5987 parameters
+ * `header-utils.parameters` - encode and parse RFC 5987 parameters
  * `header-utils.encoding` - common tools for reading/writing header values
  * `header-utils.parser` - internal tool useful in extending the library (e.g. adding direct support for additional headers)
 
