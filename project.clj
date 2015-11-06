@@ -1,4 +1,4 @@
-(defproject co.zensight/header-utils "0.1.1"
+(defproject co.zensight/header-utils "0.1.2"
   :description "Tools for working HTTP headers"
   :url "http://github.com/zensight/header-utils"
   :license {:name "The MIT License (MIT)"
