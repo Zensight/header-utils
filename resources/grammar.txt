@@ -1,9 +1,9 @@
-;rfc-6266, see content-disposition.clj
+;rfc 6266, see content-disposition.clj
 content-disposition         = <LWSP> content-disposition-type *( <LWSP> <";"> <LWSP> content-disposition-param)
 content-disposition-type    = token
 content-disposition-param   = parameter
 
-;rfc-5987, see parameters.clj
+;rfc 5987, see parameters.clj
 parameter                = reg-parameter / ext-parameter
 reg-parameter            = parmname LWSP "=" LWSP reg-value
 ext-parameter            = parmname "*" LWSP "=" LWSP ext-value
@@ -18,9 +18,14 @@ language                 = *( ALPHA / DIGIT / "-" )
 ext-value-chars          = *( pct-encoded / attr-char )
 
 pct-encoded              = "%" HEXDIG HEXDIG
-attr-char                = #'[^()<>@,;:\\"/\[\]?={} \t*\'%]'
 
-;rfc-2616, see parser.clj
+;;this is what the spec says
+;;attr-char              = #'[^()<>@,;:\\"/\[\]?={} \t*\'%]'
+
+;;this is what reality says
+attr-char                = #'[^;:\\"% =\t]'
+
+;rfc 2616, see parser.clj
 reg-value                = token / quoted-string
 
 token                    = 1*token-char
