@@ -16,7 +16,7 @@
 
 (deftest bad-wild-test
   (are [x y] (= (cd/parse-filename x) y)
-    "attachment;\r\n filename*= UTF-8''parens%20are%20illegal(1).pdf" "parens are illegal(1).pdf"))
+    "attachment; filename*= UTF-8''parens%20are%20illegal(1).pdf" "parens are illegal(1).pdf"))
 
 (deftest disposition-type-test
   (are [x y] (= (cd/parse-type x) y)
