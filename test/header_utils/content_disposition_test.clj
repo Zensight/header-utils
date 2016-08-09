@@ -8,6 +8,7 @@
     "attachment;\r\n filename*= UTF-8''%e2%82%ac%20rates" "€ rates"
     "attachment; filename=\"EURO rates\"; filename*=utf-8''%e2%82%ac%20rates" "€ rates"
     "attachment;filename=\"this has spaces.pdf\"" "this has spaces.pdf"
+    ";filename=missingtype.pdf" "missingtype.pdf"
     "inline" nil
     "asdfas:e҉rasdfasfe;a*^*&F" nil
     "attachment:filename=improperly spaced" nil
@@ -39,9 +40,9 @@
     ["inline" "foo bar.txt"]                        "inline;filename=\"foo bar.txt\""
     ["inline" "foo \" bar.txt"]                     "inline;filename=\"foo \\\" bar.txt\""
     ["inline" "comma,having.txt"]                   "inline;filename=\"comma,having.txt\""
-    ["inline" "special҉"]                            "inline;filename*=UTF-8''special%D2%89"
-    ["inline" "special҉,comma"]                      "inline;filename*=UTF-8''special%D2%89%2Ccomma"
+    ["inline" "special҉"]                           "inline;filename*=UTF-8''special%D2%89"
+    ["inline" "special҉,comma"]                     "inline;filename*=UTF-8''special%D2%89%2Ccomma"
     ["inline" "need-language" "en" {}]              "inline;filename*=UTF-8'en'need-language"
-    ["inline" "more-params" nil {:foo "bar"}]       "inline;filename=more-params;foo=bar"
-    ["inline" "more-params" nil {:foo "special҉"}]   "inline;filename=more-params;foo*=UTF-8''special%D2%89"))
+    ["inline" "more-params" nil {:foo "bar"}]       "inline;foo=bar;filename=more-params"
+    ["inline" "more-params" nil {:foo "special҉"}]  "inline;foo*=UTF-8''special%D2%89;filename=more-params"))
 

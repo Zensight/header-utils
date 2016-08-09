@@ -1,5 +1,5 @@
 ;rfc 6266, see content-disposition.clj
-content-disposition         = <LWSP> content-disposition-type *( <LWSP> <";"> <LWSP> content-disposition-param)
+content-disposition         = <LWSP> *1content-disposition-type *( <LWSP> <";"> <LWSP> content-disposition-param)
 content-disposition-type    = token
 content-disposition-param   = parameter
 
